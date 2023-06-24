@@ -4,14 +4,14 @@ const thoughtController = {
   // get all thoughts
   getAllThoughts(req, res) {
     Thought.find({})
-      .populate({
-        path: "reactions",
-        select: "-__v",
-      })
-      .populate({
-        path: "thoughts",
-        select: "-__v",
-      })
+    //   .populate({
+    //     path: "reactions",
+    //     select: "-__v",
+    //   })
+    //   .populate({
+    //     path: "thoughts",
+    //     select: "-__v",
+    //   })
       .select("-__v")
       .then((dbThoughtData) => res.json(dbThoughtData)) // Return the data in JSON
       .catch((err) => {
