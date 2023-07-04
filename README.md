@@ -1,4 +1,4 @@
-# Express.js Note Taker
+# No Sql Social Network API
   ![Github License](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
 
   ## Description
